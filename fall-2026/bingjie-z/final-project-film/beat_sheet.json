@@ -1,0 +1,1299 @@
+{
+  "metadata": {
+    "slug": "ux-research-insight-validator-pitch",
+    "title": "UX Research Insight Validator",
+    "topic": "UX RESEARCH · EVIDENCE AUDIT",
+    "skill": "show-tell",
+    "style_preset": "show-tell",
+    "channel": "student-pitch",
+    "channel_title": "Bingjie Zhou",
+    "persona": "Bingjie Zhou (student narration; Kokoro is preview only)",
+    "voice": "af_bella",
+    "voice_kokoro": "af_bella",
+    "engine": "kokoro",
+    "clock": "narration",
+    "palette": "claude",
+    "register": "Plain",
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "width": 3840,
+    "height": 2160,
+    "caption_policy": "none",
+    "greeting_language": "English",
+    "bookend_exempt": [
+      "cold-open",
+      "bvdt"
+    ],
+    "bookend_exempt_reason": "INFO 7375 student pitch: use a self-attributed hesitant-writer opener, not the toolkit host persona; no verdict card; own voice in final edit.",
+    "audience": "UX researchers, UX hiring managers, and INFO 7375 reviewers",
+    "source_doc": "PROJECT-BRIEF.md; NARRATION-SCRIPT.md; SOURCES.md",
+    "playlist": "INFO 7375 Final Project",
+    "chapter_number": 0,
+    "tags": [
+      "UX research",
+      "research validation",
+      "source grounding",
+      "evidence",
+      "AI evaluation"
+    ],
+    "development_status": "PROPOSED — no working validator or evaluation results yet",
+    "student_film_note": "All interview visuals are constructed; do not present as field research.",
+    "build": {
+      "at": "2026-10-25T23:36:17",
+      "cut": "master",
+      "filled": 26,
+      "of": 26,
+      "slates": [],
+      "skin_warnings": [
+        "BIDEA: palette=claude but the cold open is 'BrutalistHesitantWriter' — COLD OPEN LAW wants ClaudeComposerAsk"
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "BIDEA",
+      "act": "proposal question",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Hi, I'm Bingjie Zhou. My project asks a simple question: when AI summarizes interviews, how can we verify its findings?",
+      "estimated_duration_s": 8.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "types the research question"
+          },
+          {
+            "at": 0.6,
+            "event": "corrects 'summarize interviews' to 'verify findings'"
+          }
+        ],
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "How can AI summarize interviews?",
+            "triggerWords": "summarize interviews",
+            "replacementWords": "verify findings",
+            "fontSize": 70,
+            "charMs": 22,
+            "hesitateBetween": 6,
+            "hesitateWithin": 1,
+            "mistakeRate": 2,
+            "jitter": 20,
+            "seed": "ux-research-insight-validator-pitch",
+            "banner": ""
+          },
+          "rendered": {
+            "out": "media/BIDEA.mp4",
+            "at": "2026-10-26T03:18:08.190366+00:00"
+          }
+        }
+      },
+      "lead_silence_s": 0.8,
+      "motion_claim": "The question is corrected from summary generation to verification.",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Typed, corrected question is the action."
+      },
+      "actual_duration_s": 8.73,
+      "audio_file": "mp3/beat-BIDEA.mp3",
+      "render_duration_s": 8.75,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BIDEA.mp4",
+        "filled_by": "remotion:BrutalistHesitantWriter",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "BDEFS",
+      "act": "key terms",
+      "lane": "bookend",
+      "proof_gate": "CARD",
+      "narration_text": "Three terms: a finding is a research claim, evidence is what participants actually said, and an audit checks whether the claim follows from that evidence.",
+      "estimated_duration_s": 10.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.12,
+            "event": "finding appears"
+          },
+          {
+            "at": 0.5,
+            "event": "evidence appears"
+          },
+          {
+            "at": 0.79,
+            "event": "audit appears"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeDefinitions",
+          "props": {
+            "title": "Terms In This Film",
+            "terms": [
+              {
+                "term": "finding",
+                "meaning": "a research claim"
+              },
+              {
+                "term": "evidence",
+                "meaning": "what participants actually said"
+              },
+              {
+                "term": "audit",
+                "meaning": "checking whether a claim follows from evidence"
+              }
+            ],
+            "folderLabel": "Bingjie Zhou"
+          },
+          "rendered": {
+            "out": "media/BDEFS.mp4",
+            "at": "2026-10-26T03:09:39.412412+00:00"
+          }
+        }
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Brief definitions card."
+      },
+      "actual_duration_s": 9.41,
+      "audio_file": "mp3/beat-BDEFS.mp3",
+      "render_duration_s": 9.416666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BDEFS.mp4",
+        "filled_by": "remotion:ClaudeDefinitions",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B00",
+      "act": "show-tell",
+      "section": "The problem",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "AI can summarize user interviews in seconds. But a fluent summary is not necessarily a faithful one.",
+      "estimated_duration_s": 6.8,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A stack of fictional interview pages slides into a schematic AI box; a clean summary page comes out. Small label: CONSTRUCTED.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "pages enter"
+          },
+          {
+            "at": 0.48,
+            "event": "summary emerges"
+          },
+          {
+            "at": 0.75,
+            "event": "question mark arrives"
+          }
+        ],
+        "manim": {
+          "class": "B00_Summary"
+        },
+        "motion_claim": "A stack of fictional interview pages slides into a schematic AI box; a clean summary page comes out. Small label: CONSTRUCTED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 6.98,
+      "audio_file": "mp3/beat-B00.mp3",
+      "render_duration_s": 7.0,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B00.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "show-tell",
+      "section": "The problem",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "It might exaggerate one comment, overlook a disagreement, or turn a possibility into a fact. For UX research, those mistakes matter because research findings can shape real design decisions.",
+      "estimated_duration_s": 11.6,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "One summary page incorrectly grows to cover two disagreeing quote cards, then an arrow carries it toward a design sketch. Labels: CLAIM, QUOTES.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "quote cards appear"
+          },
+          {
+            "at": 0.35,
+            "event": "summary expands too far"
+          },
+          {
+            "at": 0.72,
+            "event": "arrow moves to design sketch"
+          }
+        ],
+        "manim": {
+          "class": "B01_Distortion"
+        },
+        "motion_claim": "One summary page incorrectly grows to cover two disagreeing quote cards, then an arrow carries it toward a design sketch. Labels: CLAIM, QUOTES."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 12.84,
+      "audio_file": "mp3/beat-B01.mp3",
+      "render_duration_s": 12.875,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "show-tell",
+      "section": "What I will build",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "My proposed final project is UX Research Insight Validator: an AI-assisted workflow that checks research findings against their original interview evidence.",
+      "estimated_duration_s": 8.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "One illustrated audit desk accepts a proposed finding and the original interview pages. Label: PROPOSED.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "audit desk arrives"
+          },
+          {
+            "at": 0.48,
+            "event": "two source objects move into desk"
+          },
+          {
+            "at": 0.78,
+            "event": "magnifier appears"
+          }
+        ],
+        "manim": {
+          "class": "B02_Validator"
+        },
+        "motion_claim": "One illustrated audit desk accepts a proposed finding and the original interview pages. Label: PROPOSED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 10.73,
+      "audio_file": "mp3/beat-B02.mp3",
+      "render_duration_s": 10.75,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B02.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "show-tell",
+      "section": "What I will build",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I plan to build a small, reproducible Python-based workflow with structured outputs, sample reports, and tests. This is a proposal, not a working product yet.",
+      "estimated_duration_s": 10.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A proposed workflow grows from Python block to JSON report to test checklist; none is presented as running code. Label: PROPOSED.",
+        "show": [
+          {
+            "at": 0.12,
+            "event": "Python tile appears"
+          },
+          {
+            "at": 0.42,
+            "event": "report page arrives"
+          },
+          {
+            "at": 0.74,
+            "event": "test clipboard joins"
+          }
+        ],
+        "manim": {
+          "class": "B03_Plan"
+        },
+        "motion_claim": "A proposed workflow grows from Python block to JSON report to test checklist; none is presented as running code. Label: PROPOSED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 10.47,
+      "audio_file": "mp3/beat-B03.mp3",
+      "render_duration_s": 10.5,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B03.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "show-tell",
+      "section": "Value and alternatives",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Tools such as Dovetail and Looppanel already support AI-assisted research analysis, so generating themes alone would not be a meaningful difference.",
+      "estimated_duration_s": 8.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Two generic platform cards marked Dovetail and Looppanel are next to a stack of synthesized themes; neither card impersonates a real UI.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "two cards appear"
+          },
+          {
+            "at": 0.52,
+            "event": "theme pages land"
+          }
+        ],
+        "manim": {
+          "class": "B04_Alternatives"
+        },
+        "motion_claim": "Two generic platform cards marked Dovetail and Looppanel are next to a stack of synthesized themes; neither card impersonates a real UI."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 9.43,
+      "audio_file": "mp3/beat-B04.mp3",
+      "render_duration_s": 9.458333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "show-tell",
+      "section": "Value and alternatives",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "My focus will be narrower: auditing individual claims for missing support, overgeneralization, and minority perspectives that a summary may overlook.",
+      "estimated_duration_s": 8.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "One claim card moves through three visible inspection gates: EVIDENCE, SCOPE, VOICES. A small dissenting quote remains visible. Label: PROPOSED.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "claim arrives"
+          },
+          {
+            "at": 0.32,
+            "event": "evidence gate appears"
+          },
+          {
+            "at": 0.54,
+            "event": "scope gate appears"
+          },
+          {
+            "at": 0.76,
+            "event": "minority quote becomes visible"
+          }
+        ],
+        "manim": {
+          "class": "B05_Claims"
+        },
+        "motion_claim": "One claim card moves through three visible inspection gates: EVIDENCE, SCOPE, VOICES. A small dissenting quote remains visible. Label: PROPOSED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 9.69,
+      "audio_file": "mp3/beat-B05.mp3",
+      "render_duration_s": 9.708333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "show-tell",
+      "section": "Value and alternatives",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I will also connect questionable findings to possible design risks, rather than simply generating another polished summary.",
+      "estimated_duration_s": 6.8,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A warning dot appears on a disputed finding; a branching arrow points toward a possible design decision. Label: PROPOSED.",
+        "show": [
+          {
+            "at": 0.13,
+            "event": "finding appears"
+          },
+          {
+            "at": 0.43,
+            "event": "warning flag arrives"
+          },
+          {
+            "at": 0.72,
+            "event": "risk branch draws"
+          }
+        ],
+        "manim": {
+          "class": "B06_DesignRisk"
+        },
+        "motion_claim": "A warning dot appears on a disputed finding; a branching arrow points toward a possible design decision. Label: PROPOSED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 7.47,
+      "audio_file": "mp3/beat-B06.mp3",
+      "render_duration_s": 7.5,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "show-tell",
+      "section": "Who uses it",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "The main user will be a UX researcher.",
+      "estimated_duration_s": 3.2,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A laptop/workbench and research pages assemble as a generic researcher workspace, without a real person portrait. Label: PROPOSED.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "workbench enters"
+          },
+          {
+            "at": 0.55,
+            "event": "interview papers arrive"
+          }
+        ],
+        "manim": {
+          "class": "B07_Researcher"
+        },
+        "motion_claim": "A laptop/workbench and research pages assemble as a generic researcher workspace, without a real person portrait. Label: PROPOSED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 2.2,
+      "audio_file": "mp3/beat-B07.mp3",
+      "render_duration_s": 2.2083333333333335,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B07.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "show-tell",
+      "section": "Who uses it",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "In the first minute, they will open a sample report, choose one finding, and see the original quotes, conflicting viewpoints, and any audit flags.",
+      "estimated_duration_s": 9.6,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A CONSTRUCTED report shows one finding and linked source cards; a conflicting source turns to face the viewer and an audit flag appears.",
+        "show": [
+          {
+            "at": 0.08,
+            "event": "constructed report opens"
+          },
+          {
+            "at": 0.35,
+            "event": "one finding selected"
+          },
+          {
+            "at": 0.62,
+            "event": "conflicting quote surfaces"
+          },
+          {
+            "at": 0.82,
+            "event": "flag appears"
+          }
+        ],
+        "manim": {
+          "class": "B08_Report"
+        },
+        "motion_claim": "A CONSTRUCTED report shows one finding and linked source cards; a conflicting source turns to face the viewer and an audit flag appears."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 8.77,
+      "audio_file": "mp3/beat-B08.mp3",
+      "render_duration_s": 8.791666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B08.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "act": "show-tell",
+      "section": "Who uses it",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "A hiring manager will be able to examine the same evidence, prompts, and tests in the repository.",
+      "estimated_duration_s": 6.8,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A generic repository folder opens to reveal labeled evidence, prompt and test documents. Label: PLANNED.",
+        "show": [
+          {
+            "at": 0.14,
+            "event": "repo folder opens"
+          },
+          {
+            "at": 0.48,
+            "event": "three documents lift"
+          },
+          {
+            "at": 0.76,
+            "event": "source link draws"
+          }
+        ],
+        "manim": {
+          "class": "B09_Review"
+        },
+        "motion_claim": "A generic repository folder opens to reveal labeled evidence, prompt and test documents. Label: PLANNED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 6.49,
+      "audio_file": "mp3/beat-B09.mp3",
+      "render_duration_s": 6.5,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B09.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B10",
+      "act": "show-tell",
+      "section": "Scope and first working step",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I will begin with three to five synthetic interviews.",
+      "estimated_duration_s": 3.6,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Three to five fictional paper interview cards fan out. Each paper has a visible CONSTRUCTED label.",
+        "show": [
+          {
+            "at": 0.12,
+            "event": "three cards arrive"
+          },
+          {
+            "at": 0.6,
+            "event": "two more outlines arrive"
+          }
+        ],
+        "manim": {
+          "class": "B10_Synthetic"
+        },
+        "motion_claim": "Three to five fictional paper interview cards fan out. Each paper has a visible CONSTRUCTED label."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 2.84,
+      "audio_file": "mp3/beat-B10.mp3",
+      "render_duration_s": 2.875,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B10.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B11",
+      "act": "show-tell",
+      "section": "Scope and first working step",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "The first runnable step will be simple: check whether a cited quotation actually appears in its source transcript, and return the source ID.",
+      "estimated_duration_s": 9.2,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "An exact quote string is visually connected to the matching line on a constructed source page; then a source ID appears. Label: PROPOSED.",
+        "show": [
+          {
+            "at": 0.09,
+            "event": "quote appears"
+          },
+          {
+            "at": 0.42,
+            "event": "matching line highlighted"
+          },
+          {
+            "at": 0.75,
+            "event": "source ID appears"
+          }
+        ],
+        "manim": {
+          "class": "B11_QuoteMatch"
+        },
+        "motion_claim": "An exact quote string is visually connected to the matching line on a constructed source page; then a source ID appears. Label: PROPOSED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 8.55,
+      "audio_file": "mp3/beat-B11.mp3",
+      "render_duration_s": 8.583333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B11.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B12",
+      "act": "show-tell",
+      "section": "Scope and first working step",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "After that, I will add checks for distorted claims and overlooked perspectives, plus a short note on potential design impact.",
+      "estimated_duration_s": 8.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Three proposed modules emerge beside the audit desk: DISTORTION, VOICES, IMPACT. One card advances to each module.",
+        "show": [
+          {
+            "at": 0.12,
+            "event": "distortion module"
+          },
+          {
+            "at": 0.46,
+            "event": "voices module"
+          },
+          {
+            "at": 0.76,
+            "event": "impact module"
+          }
+        ],
+        "manim": {
+          "class": "B12_FutureChecks"
+        },
+        "motion_claim": "Three proposed modules emerge beside the audit desk: DISTORTION, VOICES, IMPACT. One card advances to each module."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 7.83,
+      "audio_file": "mp3/beat-B12.mp3",
+      "render_duration_s": 7.833333333333333,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B12.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B13",
+      "act": "show-tell",
+      "section": "Scope and first working step",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I will not build live transcription, a full dashboard, or an automatic design decision maker.",
+      "estimated_duration_s": 6.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Three optional objects (microphone, dashboard, autopilot switch) move outside a dotted boundary marked OUT OF SCOPE.",
+        "show": [
+          {
+            "at": 0.11,
+            "event": "dotted boundary appears"
+          },
+          {
+            "at": 0.48,
+            "event": "objects move out"
+          },
+          {
+            "at": 0.79,
+            "event": "scope closes"
+          }
+        ],
+        "manim": {
+          "class": "B13_OutOfScope"
+        },
+        "motion_claim": "Three optional objects (microphone, dashboard, autopilot switch) move outside a dotted boundary marked OUT OF SCOPE."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 5.87,
+      "audio_file": "mp3/beat-B13.mp3",
+      "render_duration_s": 5.875,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B13.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B14",
+      "act": "show-tell",
+      "section": "Skills, evaluation, and risk",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "This project will demonstrate prompt contracts, source grounding, structured outputs, verification, and evaluation.",
+      "estimated_duration_s": 5.2,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Five labeled research/engineering elements connect as a single workflow, not a wall of text. Labels are limited to two or three terms. Label: PROPOSED.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "source page appears"
+          },
+          {
+            "at": 0.43,
+            "event": "prompt contract and structured output assemble"
+          },
+          {
+            "at": 0.75,
+            "event": "evaluation check appears"
+          }
+        ],
+        "manim": {
+          "class": "B14_Skills"
+        },
+        "motion_claim": "Five labeled research/engineering elements connect as a single workflow, not a wall of text. Labels are limited to two or three terms. Label: PROPOSED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 7.64,
+      "audio_file": "mp3/beat-B14.mp3",
+      "render_duration_s": 7.666666666666667,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B14.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B15",
+      "act": "show-tell",
+      "section": "Skills, evaluation, and risk",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I plan to create roughly eight to twelve manually labeled test cases and compare basic AI findings with audited findings.",
+      "estimated_duration_s": 8.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A constructed test case joins two paths labeled BASELINE and AUDIT, ending at an illustrated comparison sheet. Label: PLANNED.",
+        "show": [
+          {
+            "at": 0.13,
+            "event": "test case appears"
+          },
+          {
+            "at": 0.4,
+            "event": "two evaluation paths draw"
+          },
+          {
+            "at": 0.74,
+            "event": "comparison sheet appears"
+          }
+        ],
+        "manim": {
+          "class": "B15_Evaluation"
+        },
+        "motion_claim": "A constructed test case joins two paths labeled BASELINE and AUDIT, ending at an illustrated comparison sheet. Label: PLANNED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 8.09,
+      "audio_file": "mp3/beat-B15.mp3",
+      "render_duration_s": 8.125,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B15.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B16",
+      "act": "show-tell",
+      "section": "Skills, evaluation, and risk",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "A major risk is that the validator itself may hallucinate or flag reasonable interpretations as errors.",
+      "estimated_duration_s": 6.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A validator box incorrectly flags one reasonable interpretation; a caution marker appears. Label: HYPOTHETICAL.",
+        "show": [
+          {
+            "at": 0.12,
+            "event": "finding appears"
+          },
+          {
+            "at": 0.47,
+            "event": "wrong flag appears"
+          },
+          {
+            "at": 0.74,
+            "event": "caution pulse"
+          }
+        ],
+        "manim": {
+          "class": "B16_Risk"
+        },
+        "motion_claim": "A validator box incorrectly flags one reasonable interpretation; a caution marker appears. Label: HYPOTHETICAL."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 7.15,
+      "audio_file": "mp3/beat-B16.mp3",
+      "render_duration_s": 7.166666666666667,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B16.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B17",
+      "act": "show-tell",
+      "section": "Skills, evaluation, and risk",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Exact quote matching can verify citations, but judgments about meaning will need human review.",
+      "estimated_duration_s": 5.6,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "One exact quote passes a string-match check while a separate interpretation is placed in a HUMAN REVIEW tray. Label: PROPOSED.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "citation check draws"
+          },
+          {
+            "at": 0.43,
+            "event": "ambiguous claim rises"
+          },
+          {
+            "at": 0.73,
+            "event": "human-review tray appears"
+          }
+        ],
+        "manim": {
+          "class": "B17_HumanReview"
+        },
+        "motion_claim": "One exact quote passes a string-match check while a separate interpretation is placed in a HUMAN REVIEW tray. Label: PROPOSED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 6.36,
+      "audio_file": "mp3/beat-B17.mp3",
+      "render_duration_s": 6.375,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B17.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B18",
+      "act": "show-tell",
+      "section": "Skills, evaluation, and risk",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I will record both detected mistakes and missed ones.",
+      "estimated_duration_s": 3.6,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A future evaluation log reveals two columns DETECTED and MISSED, with generic blank rows. Label: PLANNED.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "log opens"
+          },
+          {
+            "at": 0.55,
+            "event": "two empty categories appear"
+          }
+        ],
+        "manim": {
+          "class": "B18_FailureLog"
+        },
+        "motion_claim": "A future evaluation log reveals two columns DETECTED and MISSED, with generic blank rows. Label: PLANNED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 3.26,
+      "audio_file": "mp3/beat-B18.mp3",
+      "render_duration_s": 3.2916666666666665,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B18.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B19",
+      "act": "show-tell",
+      "section": "Why I chose it",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I chose this project because I want to work in UX research.",
+      "estimated_duration_s": 4.8,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A simple road from university project papers toward a UX research role marker. No invented job offer or employer shown.",
+        "show": [
+          {
+            "at": 0.15,
+            "event": "project papers appear"
+          },
+          {
+            "at": 0.56,
+            "event": "path draws to role"
+          }
+        ],
+        "manim": {
+          "class": "B19_Motivation"
+        },
+        "motion_claim": "A simple road from university project papers toward a UX research role marker. No invented job offer or employer shown."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 3.69,
+      "audio_file": "mp3/beat-B19.mp3",
+      "render_duration_s": 3.7083333333333335,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B19.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B20",
+      "act": "show-tell",
+      "section": "Why I chose it",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Through UX coursework and the Tonightly app concept, I have practiced thinking about user needs and design trade-offs.",
+      "estimated_duration_s": 7.2,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A constructed Tonightly concept card sits beside generic user-needs notes and design tradeoff arrows; not represented as a validated study.",
+        "show": [
+          {
+            "at": 0.12,
+            "event": "concept card appears"
+          },
+          {
+            "at": 0.49,
+            "event": "needs notes arrive"
+          },
+          {
+            "at": 0.78,
+            "event": "tradeoff arrows draw"
+          }
+        ],
+        "manim": {
+          "class": "B20_Tonightly"
+        },
+        "motion_claim": "A constructed Tonightly concept card sits beside generic user-needs notes and design tradeoff arrows; not represented as a validated study."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 7.4,
+      "audio_file": "mp3/beat-B20.mp3",
+      "render_duration_s": 7.416666666666667,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B20.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "B21",
+      "act": "show-tell",
+      "section": "Why I chose it",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Building reliable AI checks and systematic evaluations will be new learning for me. My goal is not to replace researchers, but to help them question AI-generated findings before those findings influence design.",
+      "estimated_duration_s": 12.8,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Audit workflow and human review table join in front of the design decision sketch; the final check mark is a plan, not a test result. Label: PROPOSED.",
+        "show": [
+          {
+            "at": 0.09,
+            "event": "audit objects join"
+          },
+          {
+            "at": 0.42,
+            "event": "human review card enters"
+          },
+          {
+            "at": 0.79,
+            "event": "question mark is preserved"
+          }
+        ],
+        "manim": {
+          "class": "B21_Conclusion"
+        },
+        "motion_claim": "Audit workflow and human review table join in front of the design decision sketch; the final check mark is a plan, not a test result. Label: PROPOSED."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell intentionally uses one isometric drawing per beat with short labels. This does not waive contrast, empty-frame, or edge-bleed checks."
+      },
+      "actual_duration_s": 14.53,
+      "audio_file": "mp3/beat-B21.mp3",
+      "render_duration_s": 14.541666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B21.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "human review",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Before trusting an AI research finding, ask three questions. Which exact quotes support it? Whose views might be missing? And what design decision could it influence?",
+      "estimated_duration_s": 10.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "review question types"
+          },
+          {
+            "at": 0.78,
+            "event": "two checks appear"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "UX RESEARCH · YOUR TURN",
+            "segment": "Check a Finding",
+            "command": "Before trusting an AI research finding, ask: which exact quotes support it, whose views might be missing, and what design decision could it influence?",
+            "runningText": "check the evidence…",
+            "output": [
+              "Check source quotes.",
+              "Look for missing perspectives."
+            ],
+            "folderLabel": "Bingjie Zhou",
+            "modelLabel": "",
+            "effortLabel": ""
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": "2026-10-26T03:10:44.036584+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 10.6,
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "render_duration_s": 10.625,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-10-25T23:36:17"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "UX Research Insight Validator. Final project pitch by Bingjie Zhou.",
+      "estimated_duration_s": 4.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "project title and student attribution appear"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "UX Research Insight Validator",
+            "slug": "ux-research-insight-validator-pitch",
+            "handle": "Bingjie Zhou",
+            "subline": ""
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": "2026-10-26T03:11:00.168331+00:00"
+          }
+        }
+      },
+      "kind": "outro_voice",
+      "tail_silence_s": 1.0,
+      "actual_duration_s": 4.67,
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "render_duration_s": 4.708333333333333,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "remotion:ClaudeTitleOutro",
+        "at": "2026-10-25T23:36:17"
+      }
+    }
+  ]
+}
